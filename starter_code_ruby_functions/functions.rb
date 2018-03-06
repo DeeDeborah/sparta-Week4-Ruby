@@ -1,28 +1,55 @@
 # Write a function that multiplies two numbers and returns the result
 # multiply
-def multiply
-end
+def multiply num1, num2
 
-# Write a function that multiplies three numbers and returns the result
-# add_three
-def add_three
+	num1 * num2
+
 end
+puts multiply 2,11
+ 
+# should return the sum of the three numbers passed
+# add_three
+def add_three num1, num2, num3
+
+	num1 + num2 + num3 
+end
+puts add_three 5,10,9
 
 # Write a function that returns the smaller of 2 numbers
 # smallest_number
 
-def smallest_number
+def smallest_number num1, num2
+
+	num1<num2 ? num1 : num2
+
 end
+
+smallest_number 4,6
 
 # Write a function that returns the largest of 3 numbers
 # max_of_three
-def max_of_three
+def max_of_three num1,num2,num3
+
+
+	max_of_three = [4, 6, 12].to_a.max
+	 
+
 end
+max_of_three 4,6,12
 
 # Write a function that returns the reverse a string 
 # reverse_string
-def reverse_string 
+def reverse_string(string)
+
+  string = (string.each do |word|
+    word.reverse
+  end).join(' ')
+
 end
+
+puts reverse_string "Hello Naill"
+
+
 
 # write a function that returns the year of birth from an age
 # disemvowel
@@ -47,6 +74,10 @@ end
 # discard the first 3 elements of an array, 
 # e.g. [1, 2, 3, 4, 5, 6] becomes [4, 5, 6]
 def all_elements_except_first_3
+	
+	array = []
+	
+
 end
 
 # turn an array (with an even number of elements) into a hash, by
